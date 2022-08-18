@@ -1,0 +1,18 @@
+<div class="row-container">
+    <h3 *ngIf="products.length == 0">Your cart is empty</h3>
+    <div class="product-row" *ngFor="let product of products">
+        <div class="img">
+          <img [src]="product.image" width="54px" height="54px" alt="">
+        </div>
+        <div class="description ms-2">
+          <p class="fw-semibold product-title">{{ product.title }}</p>
+          <p><small>Quantity: {{ product.quantity }}</small></p>
+          <p><small>Price: $ {{ product.price }}</small></p>
+          <p><small class="text-danger cursor-pointer" (click)="deleteProduct(product)">Delete</small></p>
+        </div>
+    </div>
+</div>
+<div class="cart-footer">
+    <hr>
+    <h4><strong>Total: </strong>$ {{ total[0] }}</h4>
+</div>

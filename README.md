@@ -2,26 +2,33 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
-## Development server
+# Angular technical test for Devsavant
+### Author: Oscar Morales Davis
+#### Technical description:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This demo is about a sample page that simulates an online store, made with Angular 14. As backend endpoint, we are using [Fake Store API](https://fakestoreapi.com/)
 
-## Code scaffolding
+# How to run it locally
+1. Clone the repository to your local machine:
+```bash
+git clone [git repo]
+```
+or if you want it in an specific folder, please make that folder, navigate into it, and run:
+```bash
+git clone [git repo] .
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Run `npm install` inside the cloned folder:
+```bash
+$ npm install
+```
 
-## Build
+3. Start the dev server by running the command below. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+$ ng serve
+```
+3. For run the tests, run the command bellow:
+```bash
+$ ng test
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

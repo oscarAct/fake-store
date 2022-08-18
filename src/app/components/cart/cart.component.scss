@@ -1,0 +1,28 @@
+.row-container {
+    min-height: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    .product-row {
+        display: flex;
+        border-bottom: 1px solid rgb(235, 235, 235);
+        padding: 10px;
+        min-width: 100%;
+        .description {
+            .product-title {
+                font-size: 14px;
+                font-weight: 600;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+    .cart-footer {
+        min-width: 100%;
+        background-color: white;
+        align-self: end !important;
+    }
+}
+.cursor-pointer {
+    cursor: pointer !important;
+}

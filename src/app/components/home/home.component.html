@@ -1,0 +1,52 @@
+<section class="banner">
+</section>
+<section class="navigation-section">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active text-danger fw-semibold" aria-current="page" href="#">New Arrivals</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Featured</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Best Sellers</a>
+        </li>
+    </ul>
+</section>
+<section class="clothes-section py-5">
+    <div class="container">
+       <div class="row row-cols-1 row-cols-lg-4 row-cols-xl-4 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let product of products">
+          <div class="card">
+            <div class="p-3 product-image-container">
+              <img [src]="product.image" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">{{ product.title }}</h6>
+              <p class="text-secondary">$ {{ product.price }}</p>
+              <button class="btn btn-block btn-dark liveToastBtn" id="liveToastBtn" (click)="addToCart(product)">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+</section>
+<section class="toast-message">
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="product-added-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img [src]="productAddedToCart.image" class="me-2" alt="image" height="30px">
+        <strong class="me-auto">{{ productAddedToCart.title }}</strong>
+        <small>Now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Was successfully added to the cart
+      </div>
+    </div>
+  </div>
+  
+  
+</section>

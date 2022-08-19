@@ -11,11 +11,11 @@ This demo is about a sample page that simulates an online store, made with Angul
 # How to run it locally
 1. Clone the repository to your local machine:
 ```bash
-git clone [git repo]
+git clone https://github.com/oscarAct/fake-store.git
 ```
 or if you want it in an specific folder, please make that folder, navigate into it, and run:
 ```bash
-git clone [git repo] .
+git clone https://github.com/oscarAct/fake-store.git .
 ```
 
 2. Run `npm install` inside the cloned folder:

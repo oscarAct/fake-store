@@ -25,7 +25,6 @@ export class HomeComponent implements OnInit {
     this._productService.getProducts(quantity).subscribe((products: Product[]) => {
       this.products = products;
       this.products.map(product => product.quantity = 1);
-      console.log(products);
     });
   }
   addToCart(product: Product) {
